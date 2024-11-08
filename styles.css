@@ -1,0 +1,180 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #134677;
+  color: #134677;
+}
+
+/* Cabeçalho */
+.head {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+
+  max-width: 500px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.title-text {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.subtitle-text {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #134677;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #0b3958;
+}
+
+/* Seção Quem Pode Utilizar */
+.who {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.text-who {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card-who {
+  background-color: #FFFFFF;
+  padding: 10px 64px 16px 64px;
+  width: 400px;
+  height: 70px;
+  border-radius: 20px;
+  color: #134677;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-finep {
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-about {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.paragraf-about {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.finep-details {
+  display: flex;
+  align-items: flex-start;
+  /* Alinha ao topo */
+  justify-content: space-between;
+  /* Espaço entre as colunas */
+  gap: 20px;
+}
+
+.finep-info {
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
+}
+
+.logo-finep {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.finep-benefits {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.finep-benefits li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-image {
+  width: 400px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-top: 50px;
+}
+
+.contact-button {
+  margin-top: 40px;
+  background-color: #0E9BD7;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.contact-button:hover {
+  background-color: #15558a;
+  border: 1px solid #0E9BD7
+}
