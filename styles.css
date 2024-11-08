@@ -41,7 +41,6 @@ body {
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-
   max-width: 500px;
 }
 
@@ -100,6 +99,7 @@ body {
   text-align: center;
 }
 
+/* Seção sobre a FINEP */
 .about-finep {
   padding: 40px;
   text-align: center;
@@ -125,9 +125,7 @@ body {
 .finep-details {
   display: flex;
   align-items: flex-start;
-  /* Alinha ao topo */
   justify-content: space-between;
-  /* Espaço entre as colunas */
   gap: 20px;
 }
 
@@ -176,5 +174,94 @@ body {
 
 .contact-button:hover {
   background-color: #15558a;
-  border: 1px solid #0E9BD7
+  border: 1px solid #0E9BD7;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .title-text {
+    font-size: 28px;
+  }
+
+  .subtitle-text {
+    font-size: 16px;
+  }
+
+  .cta {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .card-who {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .finep-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-finep {
+    width: 180px;
+  }
+
+  .project-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact-button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-text {
+    font-size: 24px;
+  }
+
+  .subtitle-text {
+    font-size: 14px;
+  }
+
+  .cta {
+    font-size: 14px;
+  }
+
+  .text-who {
+    font-size: 24px;
+  }
+
+  .card-who {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .text-about {
+    font-size: 20px;
+  }
+
+  .paragraf-about {
+    font-size: 14px;
+  }
+
+  .contact-button {
+    font-size: 18px;
+  }
 }
