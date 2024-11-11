@@ -97,6 +97,40 @@ body {
   text-align: center;
 }
 
+
+@media (max-width: 1200px) {
+  .background-img {
+    display: none;
+  }
+
+  .head {
+    background-image: url(assets/images/image/img-backgroud-tablet.png);
+    width: 100%;
+    height: 730px;
+    background-size: cover;
+    /* Faz com que a imagem preencha todo o espaço */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    background-position: center;
+    /* Centraliza a imagem */
+  }
+}
+
+@media (max-width: 600px) {
+  .background-img {
+    display: none;
+  }
+
+  .head {
+    background-image: url(assets/images/image/img-backgroud-mobile.png);
+    width: 100%;
+    height: 730px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 /* Seção sobre a FINEP */
 .about-finep {
   padding: 40px;
@@ -263,16 +297,6 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  .background-img {
-    display: none;
-  }
-
-  .head {
-    background-color: #FFFFFF;
-  }
-}
-
 .graphic {
   display: flex;
   align-items: center;
@@ -411,7 +435,7 @@ body {
   height: auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .icon-grid {
     width: 90%;
     margin-left: 5%;
