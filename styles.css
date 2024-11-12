@@ -186,10 +186,26 @@ body {
 }
 
 .project-image {
-  width: 400px;
+  width: 450px;
   border-radius: 8px;
   flex-shrink: 0;
   margin-top: 50px;
+}
+
+.contact-button-finep {
+  margin-top: 40px;
+  background-color: #0E9BD7;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.contact-button-finep:hover {
+  background-color: #3aa9d8;
 }
 
 .contact-button {
@@ -327,15 +343,25 @@ body {
   margin-top: 100px;
 }
 
-@media (max-width: 1000px) {
-  .cards img {
-    width: 30%;
-  }
+.cards h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.cards {
+  background-color: #fff;
+  color: #134677;
+  font-size: 30px;
+  padding: 50px;
+}
+
+.cards img {
+  padding: 0 50px;
 }
 
 @media (max-width: 500px) {
-  .cards img {
-    width: 40%;
+  .cards h3 {
+    font-size: 30px;
   }
 }
 
@@ -419,16 +445,6 @@ body {
   margin-top: 40px;
 }
 
-.icon-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
-
-  width: 1000px;
-  margin-left: 23%;
-  margin-top: 20px;
-}
 
 .icon-grid img {
   max-width: 50%;
@@ -437,22 +453,19 @@ body {
 
 @media (max-width: 1200px) {
   .icon-grid {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
   }
 }
 
 @media (max-width: 700px) {
   .icon-grid {
-    width: 70%;
-    margin-left: 16%;
+    width: 100%;
   }
 }
 
 @media (max-width: 450px) {
   .icon-grid {
-    width: 90%;
-    margin-left: 6%;
+    width: 100%;
   }
 }
 
@@ -487,7 +500,7 @@ body {
 .logos-container {
   display: flex;
   gap: 20px;
-  animation: scroll 20s linear infinite;
+  animation: scroll 5s linear infinite;
 }
 
 .logo-item {
